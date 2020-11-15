@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Report#1-201503107</title>
+  <title>Report#1-201503107정지원</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="my-style.css" />
 </head>
@@ -24,7 +24,6 @@
     const json = csv2json(csv);
     //console.log(json[0]);
 
-    //17,06,16 번째에 있는 종목 불러오기 - 07번이 Naver여서 06번으로 불러왔습니다!
     const selNames = ['NAVER', '카카오', json[17]['name'], json[6]['name'], json[16]['name']];
 
     const sel = filterName(json, 'name', selNames);
